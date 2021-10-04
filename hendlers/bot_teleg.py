@@ -50,7 +50,7 @@ async def istor(message: types.Message):
     key_end = types.InlineKeyboardButton(text='Хватит, спасибо!')
     keyboard.add(*[key_ist, key_aneg])
     keyboard.add(*[key_end])
-    await message.answer('Секундачку...')
+    await message.answer('Секундочку...')
     await message.answer(ist(), reply_markup=keyboard)
 
 
