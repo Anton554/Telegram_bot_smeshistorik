@@ -1,6 +1,6 @@
 from aiogram import Dispatcher, types
 from aiogram.dispatcher.filters.state import StatesGroup, State
-from pars_ist import ist, anegdot
+from pars_ist_multiproc import ist, anegdot
 
 
 class Stat(StatesGroup):
