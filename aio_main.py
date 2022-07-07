@@ -7,12 +7,14 @@ from hendlers import bot_teleg
 
 
 async def main():
+    # итоговый бот
     # bot = Bot(token="2040334276:AAH_uW2AZfIMa538tVujTTzNBvlHFjy_Y1c")
+    # тестовый бот
     bot = Bot(token="1919792326:AAGFxE4-qrRrooJb97YYrFNFDWCQLC3ANO4")
-    url = 'mongodb+srv://Alise:gfccfnb@cluster0.wssfl.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
-    storage = MongoStorage(uri=url)
-    dp = Dispatcher(bot, storage=storage)
-    # dp = Dispatcher(bot, storage=MemoryStorage())
+    # url = 'mongodb+srv://Alise:gfccfnb@cluster0.wssfl.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
+    # storage = MongoStorage(uri=url)
+    # dp = Dispatcher(bot, storage=storage)
+    dp = Dispatcher(bot, storage=MemoryStorage())
 
     # Включаем логирование, чтобы не пропустить важные сообщения
     logging.basicConfig(level=logging.INFO)
